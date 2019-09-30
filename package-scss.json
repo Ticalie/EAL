@@ -1,0 +1,43 @@
+{
+  "name": "ts",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.8",
+    "@types/react": "16.9.4",
+    "@types/react-dom": "16.9.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-scripts": "3.1.2",
+    "typescript": "3.6.3"
+  },
+  "scripts": {
+    "ts:css": "tcm -c -p src/**/*.module.scss",
+    "start": "concurrently \"npm:ts:css -- -w\" \"react-scripts start\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "eslint-config-prettier": "^6.3.0",
+    "typed-css-modules": "^0.6.2"
+  }
+}
